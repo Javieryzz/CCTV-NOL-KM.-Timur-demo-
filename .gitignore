@@ -1,0 +1,29 @@
+# Environment & Secrets
+.env
+.env.*
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Video samples & output artifacts (terlalu besar untuk GitHub & menjaga privasi footage)
+samples/*
+!samples/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Bobot model YOLO (otomatis diunduh ultralytics saat dijalankan)
+*.pt
+*.onnx
+*.engine
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

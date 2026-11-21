@@ -1,0 +1,62 @@
+{
+  "camera": "nol_km_timur",
+  "model": "yolov8s.pt",
+  "tracker_config": "configs/tracker_custom.yaml",
+  "red_zone": [
+    [
+      0.088,
+      0.2731
+    ],
+    [
+      0.9979,
+      0.9972
+    ],
+    [
+      0.9984,
+      0.5287
+    ],
+    [
+      0.8125,
+      0.4185
+    ],
+    [
+      0.674,
+      0.3593
+    ],
+    [
+      0.499,
+      0.2963
+    ],
+    [
+      0.3557,
+      0.2611
+    ],
+    [
+      0.201,
+      0.2343
+    ]
+  ],
+  "classes": [
+    "person",
+    "bicycle",
+    "motorcycle",
+    "car",
+    "bus",
+    "truck"
+  ],
+  "conf": 0.25,
+  "iou": 0.65,
+  "imgsz": 960,
+  "track_buffer": 60,
+  "rider_overlap_threshold": 0.2,
+  "vehicle_overlap_threshold": 0.8,
+  "rider_box_pad_up": 0.35,
+  "rider_box_pad_side": 0.15,
+  "rider_box_pad_down": 0.15,
+  "rider_box_padding": 0.15,
+  "rider_sticky_seconds": 2.0,
+  "dwell_seconds": 0.8,
+  "cooldown_seconds": 10,
+  "save_snapshots": true,
+  "show_fps": true
+}
